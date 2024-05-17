@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umrechnung Längeneinheiten</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src = "app.js"></script>
+</head>
+
+<body>
+    <div class="container bevelup">
+        <div class="title">
+            Einheitenumrechner
+        </div>
+        <div class="input-section">
+            <label class="label">Wert:</label>
+            <input value="5" type="number" class="input beveldn" id="inputID">
+            <br>
+            <label class="label">Von</label>
+            <select name="" id="sourceUnitID">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="dm">dm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select>
+            <br>
+            <label class="label">Nach</label>
+            <select name="" id="targetUnitID">
+                <option value="mm">mm</option>
+                <option value="cm">cm</option>
+                <option value="dm">dm</option>
+                <option value="m">m</option>
+                <option value="km">km</option>
+            </select>
+        </div>
+        <button class="bevelup" onclick="convert()">Konvertieren</button>
+        <div id="resultID">
+            Noch nichts konvertiert!
+        </div>
+    </div>
+</body>
+
+</html>

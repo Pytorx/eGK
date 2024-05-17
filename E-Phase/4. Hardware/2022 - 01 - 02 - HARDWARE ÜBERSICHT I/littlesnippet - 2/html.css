@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css); 
+body{
+    background: lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    width: 500px;
+    margin: 20px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 50%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rechteck1{
+    position: absolute;
+    left: 100px;/*40*/
+    top: -50;
+    height: 400px;
+    width: 1500px;
+    background-color: white;
+    transform: rotate(130deg);
+    opacity: 0.7;
+    transition: all 0.3s;
+    transition-delay: 0s;/* so lange bleibt es bis es wieder raus geht*/
+}
+.rechteck2{
+    position: absolute;
+    left: -1200px;
+    top: 750;
+    height: 400px;
+    width: 1500px;
+    background-color: white;
+    transform: rotate(130deg);
+    opacity: 0.7;
+    transition: all 0.3s;
+    transition-delay: 0s;/* so lange bleibt es bis es wieder raus geht*/
+}
+.rechteck3{
+    position: absolute;
+    left: 460px;
+    top: -250px;
+    height: 1200px;
+    width: 5px;
+    background-color: darkslategray;
+    transform: rotate(40deg);
+    opacity: 1;
+    transition: all 0.3s;
+    transition-delay: 0s;/* so lange bleibt es bis es wieder raus geht*/
+}
+.rechteck4{
+    position: absolute;
+    left: -320px;
+    top: -250px;
+    height: 1200px;
+    width: 5px;
+    background-color: darkslategray;
+    transform: rotate(40deg);
+    opacity: 1;
+    transition: all 0.3s;
+    transition-delay: 0s;/* so lange bleibt es bis es wieder raus geht*/
+}
+
+
+.card:hover .rechteck1{
+    transform: translateX(-350px) rotate(130deg);
+    transition-delay: 0.2s;/* so lange dauert es bis es anfängt*/
+}
+.card:hover .rechteck2{
+    transform: translateX(350px) rotate(130deg);
+    transition-delay: 0.2s;/* so lange dauert es bis es anfängt*/
+}
+.card:hover .rechteck3{
+    transform: translateX(-350px) rotate(40deg);
+    transition-delay: 0.2s;/* so lange dauert es bis es anfängt*/
+}
+.card:hover .rechteck4{
+    transform: translateX(350px) rotate(40deg);
+    transition-delay: 0.2s;/* so lange dauert es bis es anfängt*/
+}
+.card-img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+}
+.card-title{
+    position: absolute;
+    font-family: 'Roboto Slab', serif;;
+    color: black;
+    font-size: 1px;
+    opacity: 0;
+    transition: all 0.3s;
+    background-color: white;
+    border-radius: 20px;
+    border-color: darkslategray;
+    border-style: outset;
+    border-width: 5px;
+    padding: 3px 20px;
+    margin-top: 140px;
+    letter-spacing: 2px;    
+}
+.card:hover .card-title{
+    opacity: 20;
+    transition-delay: 0.3s;
+    font-size: 60px;
+    margin-top: 100px;
+}
+.card-icon {
+    position:absolute;
+    left: 30px;
+    font-size: 60px;
+    bottom: 30px;
+    color: black;
+}

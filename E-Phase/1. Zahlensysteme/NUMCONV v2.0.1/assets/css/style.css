@@ -1,0 +1,17 @@
+body {
+    position: absolute;
+    background: #CAD2C5;
+}
+
+.icon-twitter {
+    align-self: center;
+    height: 64px;
+    margin-bottom: 2.04px;
+    width: 80px;
+}
+
+.icon-github {
+    height: 75px;
+    margin-left: 29px;
+    width: 80px;
+}

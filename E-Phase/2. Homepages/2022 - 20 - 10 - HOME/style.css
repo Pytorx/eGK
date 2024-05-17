@@ -1,0 +1,52 @@
+body {
+    background-color: #cad2c5;
+}
+
+nav {
+    background-color: #84A98C; 
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.elements a {
+    text-decoration: none;
+}
+
+ul {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.elements #selected {
+    color: #2F3E46;
+    font-weight: bold;
+}
+
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text #title1 {
+    color: #2F3E46;
+    display: flex;
+    justify-content: center;
+    margin-top: 30vh;
+    font-weight: bold;
+    font-size: 16vw;
+    font-family: 'Verdana', sans-serif;
+}
+
+.text #title2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}

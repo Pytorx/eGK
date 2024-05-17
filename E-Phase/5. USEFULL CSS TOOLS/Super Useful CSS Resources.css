@@ -1,0 +1,325 @@
+:root {
+  --darkcolor: hsl(265, 86%, 45%);
+  --lightcolor: hsl(265, 86%, 35%);
+}
+
+body {
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(background.png) 50%/cover;
+  /* Bedeutet:
+  background-position: 50% 50%;
+  background-size: cover;;
+  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  color: #333;
+  min-height: 100vh;
+}
+
+* {
+  transition: all 0.6s ease-out;
+}
+
+.card {
+  font: 400 1em/1.25 trebuchet ms, arial, sans-serif;
+  position: relative;
+  width: 700px;
+  height: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  box-shadow: 15px 15px 45px rgba(0, 0, 0, 0.25);
+  border-radius: 160px;
+  background: linear-gradient(-90deg, #e6e6e6, #ececec) padding-box, linear-gradient(to right bottom, #fff, #c8c8c8) border-box;
+  border: solid 3px transparent;
+  counter-increment: counter-cards;
+  filter: grayscale();
+}
+
+.card-inner{
+  position: absolute;
+  overflow: hidden;
+  left: 0px;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  overflow: hidden;
+  border-radius: 160px;
+}
+
+.card-inner-rect{
+  position: absolute;
+  left: 180px;
+  top: 72px;
+  width: 450px;
+  height: 2px;
+  background: var(--darkcolor);  
+}
+
+.card-inner-circle1,.card-inner-circle2,.card-inner-circle3,.card-inner-circle4{
+  position: absolute;
+  border-radius: 50%;
+  background: #0001;  
+  background: linear-gradient(45deg, #3331,#aaa1);
+}
+.card-inner-circle1{
+  left: 400px;
+  top: 70px;
+  width: 200px;
+  height: 200px;
+}
+
+.card-inner-circle2{
+  left: 530px;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+}
+
+.card-inner-circle3{
+  left: 180px;
+  top: -100px;
+  width: 150px;
+  height: 150px;
+}
+
+.card-inner-circle4{
+  left: 280px;
+  top: -50px;
+  width: 80px;
+  height: 80px;
+}
+
+.card-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.card-img-wrapper{
+  position: relative;
+  left: 18px;
+  top: 16px;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 3px 3px 10px #0007;
+  overflow: hidden;
+  
+}
+.card:hover .card-img-wrapper,
+.card.hover .card-img-wrapper{
+  transform: scale(1.05);
+}
+
+.card-img-circle1,.card-img-circle2{
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  border-radius: 50%;
+  background: #fff6;
+}
+
+.card-img-circle1{
+  left: -110%;
+  top: -110%;
+}
+.card-img-circle2{
+  left: -140%;
+  top: -70%;
+}
+
+
+.card-title {
+  position: absolute;
+  left: 180px;
+  top: 32px;
+  width: 480px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1.75em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--darkcolor);
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.card-text {
+  position: absolute;
+  left: 180px;
+  top: 80px;
+  width: 350px;
+  height: 100px;
+  text-decoration: none;
+  color:black;
+  opacity: 0.7;
+}
+.card:hover .card-title,
+.card.hover .card-title,
+.card:hover .card-text,
+.card.hover .card-text{
+  opacity: 1;
+}
+
+.card-halfcircle-left{
+  position: absolute;
+  left: -17px;
+  top: -15px;
+  width: 100px;
+  height: 180px;
+  border-top-left-radius: 150px;
+  border-bottom-left-radius: 150px;
+  border-top: 10px solid var(--darkcolor);
+  border-left: 10px solid var(--darkcolor);
+  border-bottom: 10px solid var(--darkcolor);
+  box-sizing: border-box;
+}
+
+.card-circle-right{
+  position: absolute;
+  left: 600px;
+  top: -10px;
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(-45deg, var(--lightcolor), var(--darkcolor)) padding-box, linear-gradient(45deg, var(--lightcolor), var(--darkcolor)) border-box;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px #0005;
+}
+.card-circle-right:before{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  content: counter(counter-cards, decimal-leading-zero);
+  left: 0px;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  color: #fff;
+}
+
+.card:hover,
+.card.hover{
+  filter: none;
+}
+
+.card:nth-of-type(7n+1) {
+  --lightcolor: #ee8c35;
+  --darkcolor: #ad4716;
+}
+
+.card:nth-of-type(7n+2) {
+  --lightcolor: #ffb413;
+  --darkcolor: #ff9a12;
+}
+
+.card:nth-of-type(7n+3) {
+  --lightcolor: #ff3c78;
+  --darkcolor: #fe3061;
+}
+.card:nth-of-type(7n+4) {
+  --lightcolor: #03c3cd;
+  --darkcolor: #01afbe;
+}
+.card:nth-of-type(7n+5) {
+  --lightcolor: hsl(322, 85%, 41%);
+  --darkcolor: #920c60;
+}
+.card:nth-of-type(7n+6) {
+  --lightcolor: hsl(199, 95%, 58%);
+  --darkcolor: hsl(199, 95%, 48%);
+}
+.card:nth-of-type(7n+7) {
+  --lightcolor: hsl(173, 89%, 45%);
+  --darkcolor: hsl(173, 89%, 35%);
+}
+.card:nth-of-type(7n+7) {
+  --lightcolor: hsl(173, 89%, 45%);
+  --darkcolor: hsl(173, 89%, 35%);
+}
+
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-1000px) rotate(720deg);
+      opacity: 0;
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  xbackground: #4e54c8;
+  overflow: hidden;
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.2);
+  animation: animate 19s linear infinite;
+}
+.background li:nth-child(0) {
+  left: 62%;
+  width: 136px;
+  height: 136px;
+  bottom: -136px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 56%;
+  width: 149px;
+  height: 149px;
+  bottom: -149px;
+  animation-delay: 25s;
+}
+.background li:nth-child(2) {
+  left: 64%;
+  width: 164px;
+  height: 164px;
+  bottom: -164px;
+  animation-delay: 15s;
+}
+.background li:nth-child(3) {
+  left: 15%;
+  width: 154px;
+  height: 154px;
+  bottom: -154px;
+  animation-delay: 9s;
+}
+.background li:nth-child(4) {
+  left: 79%;
+  width: 124px;
+  height: 124px;
+  bottom: -124px;
+  animation-delay: 5s;
+}
+.background li:nth-child(5) {
+  left: 41%;
+  width: 116px;
+  height: 116px;
+  bottom: -116px;
+  animation-delay: 20s;
+}

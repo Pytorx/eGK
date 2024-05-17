@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion of units of length</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src = "../../private/app.js"></script>
+</head>
+
+<body>
+<div class="container bevelup">
+    <div class="title">
+        Length calculator
+    </div>
+    <div class="input-section">
+        <label class="label">Value:</label>
+        <input value="5" type="number" class="input beveldn" id="inputID">
+        <br>
+        <label class="label">From:</label>
+        <select name="" id="sourceUnitID">
+            <option value="pm">pm</option>
+            <option value="nm">nm</option>
+            <option value="ym">ym</option>
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+        </select>
+        <br>
+        <label class="label">To:</label>
+        <select name="" id="targetUnitID">
+            <option value="pm">pm</option>
+            <option value="nm">nm</option>
+            <option value="ym">ym</option>
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+        </select>
+    </div>
+    <button class="bevelup" onclick="convertLength()">Convert</button>
+    <div id="resultID">
+        Nothing converted yet!
+    </div>
+</div>
+</body>
+
+</html>

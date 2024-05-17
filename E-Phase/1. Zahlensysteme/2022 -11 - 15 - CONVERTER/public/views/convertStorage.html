@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion of units of storage</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src = "../../private/app.js"></script>
+</head>
+
+<body>
+<div class="container bevelup">
+    <div class="title">
+        Storage calculator
+    </div>
+    <div class="input-section">
+        <label class="label">Value</label>
+        <input value="0" type="number" class="input beveldn" id="inputID">
+        <br>
+        <label class="label">From:</label>
+        <select name="" id="sourceUnitID">
+            <option value="tb">TB</option>
+            <option value="tib">TiB</option>
+            <option value="gb">GB</option>
+            <option value="gib">GiB</option>
+            <option value="mb">MB</option>
+            <option value="mib">MiB</option>
+        </select>
+        <br>
+        <label class="label">To:</label>
+        <select name="" id="targetUnitID">
+            <option value="tb">TB</option>
+            <option value="tib">TiB</option>
+            <option value="gb">GB</option>
+            <option value="gib">GiB</option>
+            <option value="mb">MB</option>
+            <option value="mib">MiB</option>
+        </select>
+    </div>
+    <button class="bevelup" onclick="convertStorage()">Convert</button>
+    <div id="resultID">
+        Nothing converted yet!
+    </div>
+</div>
+</body>
+
+</html>

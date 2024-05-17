@@ -1,0 +1,42 @@
+/* Header Styling */
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.header h2 {
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Table Styling */
+.table {
+  margin: 20px auto;
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Progress bar styling (assuming you're using Streamlit components) */
+/* No specific styling needed for progress bars in Streamlit */

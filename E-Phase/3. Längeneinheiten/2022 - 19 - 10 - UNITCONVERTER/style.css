@@ -1,0 +1,79 @@
+body {
+    background: #cad2c5;
+    min-height: 100vh;
+    font-family: 'Verdana', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color: #2F3E46;
+    font-size: 60px;
+}
+
+.card-text {
+    color: #84A98C;   
+    font-size: 20px;
+}
+
+.card {
+    background-color: #2F3E46;
+    border-radius: 15px;
+    width: 500px;
+    margin: 20px;
+    text-align: center;
+}
+
+.card-title {
+    text-decoration: none;
+    color: #cad2c5;
+    font-size: 30px;
+    transition: all 1s;
+}
+
+.card-text {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    transition: all 1s;
+}
+
+.card-title:hover {
+    color: grey;
+}
+
+.card-text:hover {
+    color: white; 
+}
+
+.rectangle {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    left: 20%;
+    top: 70%;
+    z-index: -10;
+    transform: rotate(20deg);
+}
+.rectangle2 {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100px;
+    height: 250px;
+    position: absolute;
+    left: 40%;
+    top: 70%;
+    z-index: -10;
+    transform: rotate(20deg);
+}
+.rectangle3 {
+    background: rgba(255, 255, 255, 0.2);
+    width: 100px;
+    height: 300px;
+    position: absolute;
+    left: 60%;
+    top: 65%;
+    z-index: -10;
+    transform: rotate(-30deg);
+}

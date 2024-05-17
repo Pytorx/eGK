@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container bevelup">
+        <div class="title">
+            Einheitenumrechner
+        </div>
+        <form action="#" method="POST">
+        <div class="input-section">
+            <label class="label"> Wert: </label>
+            <input type="number" class="input"><br>
+            <label class="label"> Von: </label>
+            <select name="" id="">
+                <option value="m"> m </option>
+                <option value="mm"> mm </option>
+            </select> <br>
+            <label class="label"> Nach: </label>
+            <select name="" id="">
+                <option value="m"> m </option>
+                <option value="mm"> mm </option>
+            </select>
+            <br><button class="btn" onClick="convert()"> Konvertieren </button>
+        </div>
+        <div id="resultID" class="result">
+            Noch nichts konvertiert!
+        </div>
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

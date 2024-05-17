@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbersystem conversion</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script src = "../../private/app.js"></script>
+</head>
+
+<body>
+<div class="container bevelup">
+    <div class="title">
+        Numbersystem conversion
+    </div>
+    <div class="input-section">
+        <label class="label">Value:</label>
+        <input value="1010" type="number" class="input beveldn" id="inputID">
+        <br>
+        <label class="label">From:</label>
+        <select name="" id="sourceUnitID">
+            <option value="two">Decimal (2)</option>
+            <option value="ten">System of ten (10)</option>
+            <option value="sixteen">System of sixteen (16)</option>
+            <option value="custom">Custom system (enter below)</option>
+        </select>
+        <br>
+        <label class="label">To:</label>
+        <select name="" id="targetUnitID">
+            <option value="two">Decimal (2)</option>
+            <option selected="selected" value="ten">System of ten (10)</option>
+            <option value="sixteen">System of sixteen (16)</option>
+            <option value="custom">Custom system (enter below)</option>
+        </select>
+    </div>
+    <!-- <div class="input-section">
+        <label class="label"> Custom system (please choose above): </label>
+        <input value="empty" type="number" class="customInput">
+    </div> -->
+
+    <button class="bevelup" onclick="getInput();">Convert</button>
+    <div id="resultID">
+        Nothing converted yet!
+    </div>
+</div>
+</body>
+
+</html>
